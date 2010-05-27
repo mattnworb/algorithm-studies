@@ -18,25 +18,22 @@ from sorting import heapsort
 
 def findMissingAndDuplicate(arr):
 
-	heapsort.heapsort(arr)
-	for i in xrange(len(arr)):
-		#if the value is ok, the value at index i should be (i+1)
-		if arr[i] != (i + 1):
-			#duplicate is the value in this slot, missing is (i + 1)
-			d = arr[i]
-			m = i + 1
-			return m, d
-	
+    heapsort.heapsort(arr)
+    for i in xrange(len(arr)):
+        #if the value is ok, the value at index i should be (i+1)
+        if arr[i] != (i + 1):
+            #duplicate is the value in this slot, missing is (i + 1)
+            d = arr[i]
+            m = i + 1
+            return m, d
 
-	
 if __name__ == '__main__':
-	
-	def output(a):
-		print '\nStarting array: ', a
-		missing, duplicate = findMissingAndDuplicate(a)
-		print 'Missing number: ', missing
-		print 'Duplicate number: ', duplicate
+    
+    def output(a):
+        print '\nStarting array: ', a
+        missing, duplicate = findMissingAndDuplicate(a)
+        print 'Missing number: ', missing
+        print 'Duplicate number: ', duplicate
 
-	output([3, 1, 3, 4])
-	output([7, 1, 3, 4, 2, 6, 6])
-	
+    output([3, 1, 3, 4])
+    output([7, 1, 3, 4, 2, 6, 6])
