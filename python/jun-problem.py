@@ -9,7 +9,8 @@ So, you end up with something like:
 
 3, 1, 3, 2.
 
-Write a program prints out the missing number and the duplicate number. Assume this is a giant array, we don't luxary to duplicate the array. (Memory issue). 
+Write a program prints out the missing number and the duplicate number. Assume this is a 
+giant array, we don't luxary to duplicate the array. (Memory issue). 
 
 The order in the original order is not important to our business, so you can reorder them.
 """
